@@ -125,6 +125,11 @@
     <ClInclude Include="stdio.h" />
     <ClInclude Include="string.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnitTest1\UnitTest1.vcxproj">
+      <Project>{35367d72-2f53-49da-989a-e0124faf29a7}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
