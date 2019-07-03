@@ -12,7 +12,7 @@ namespace UnitTest1
 
 		TEST_METHOD(TestMethod1)
 		{
-			// TODO: ƒeƒXƒg ƒR[ƒh‚ğ‚±‚±‚É‘}“ü‚µ‚Ü‚·
+			// TODO: ãƒ†ã‚¹ãƒˆ ã‚³ãƒ¼ãƒ‰ã‚’ã“ã“ã«æŒ¿å…¥ã—ã¾ã™
 
 			Assert::AreEqual(fizzbuzz(1), "1");
 		}
@@ -25,9 +25,7 @@ namespace UnitTest1
 		TEST_METHOD(TestMethod4) {
 			Assert::AreEqual(fizzbuzz(15), "Fizz,Buzz");
 		}
-		TEST_METHOD(TestMethod5) {
-			
-		}
+
 
 	};
 }
