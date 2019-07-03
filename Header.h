@@ -1,18 +1,32 @@
-#include <C:\Users\nt16145\source\repos\SampleTestC\stdio.h>
-#include<C:\Users\nt16145\source\repos\SampleTestC\string.h>
+#pragma once
+#include "stdio.h"
+#include "string.h"
 
 char* fizzbuzz(int i) {
 
+
+
 	static char result[16];
 
-	for (i = 1; i <= 100; i++) {
-		if (i % 3 == 0 && i % 5 == 0)  /* i‚ª3‚Ì”{”‚©‚Â5‚Ì”{” */
-			strcpy(result, "Fizz,Buzz");
-		else if (i % 3 == 0)  /* i‚ª3‚Ì”{”(‚©‚Â5‚Ì”{”‚Å‚È‚¢) */
-			strcpy(result, "Fizz");
-		else if (i % 5 == 0)  /* i‚ª5‚Ì”{”(‚©‚Â3‚Ì”{”‚Å‚È‚¢) */
-			strcpy(result, "Buzz");
-		else  /* i‚ª3‚Ì”{”‚Å‚à5‚Ì”{”‚Å‚à‚È‚¢ */
-			sprintf(result, "%d", i);
-	}
+
+		if (i % 3 == 0 && i % 5 == 0)  /* iãŒ3ã®å€æ•°ã‹ã¤5ã®å€æ•° */
+
+			strcpy_s(result,sizeof(result), "Fizz,Buzz");
+
+		else if (i % 3 == 0)  /* iãŒ3ã®å€æ•°(ã‹ã¤5ã®å€æ•°ã§ãªã„) */
+
+			strcpy_s(result, sizeof(result), "Fizz");
+
+		else if (i % 5 == 0)  /* iãŒ5ã®å€æ•°(ã‹ã¤3ã®å€æ•°ã§ãªã„) */
+
+			strcpy_s(result, sizeof(result), "Buzz");
+
+		else  /* iãŒ3ã®å€æ•°ã§ã‚‚5ã®å€æ•°ã§ã‚‚ãªã„ */
+
+			sprintf_s(result, sizeof(result), "%d", i);
+
+		return result;
+
+
+
 }
